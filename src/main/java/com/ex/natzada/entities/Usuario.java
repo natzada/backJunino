@@ -58,20 +58,12 @@ public class Usuario {
 		this.nome = nome;
 	}
 
-<<<<<<< HEAD
 	public String getPassword() {
 		return password;
 	}
 
 	public void setPassword(String password) {
-=======
-	public String getSenha() {
-		return password;
-	}
-
-	public void setSenha(String password) {
->>>>>>> ada3173f40450b623d3fde75de46268eaccc93e7
-		this.password = password;
+	 this.password = password;
 	}
 
 	public String getCpf() {

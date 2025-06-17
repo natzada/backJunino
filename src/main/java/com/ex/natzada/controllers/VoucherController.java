@@ -57,10 +57,16 @@ public class VoucherController {
 
 	@PostMapping("/daily/{userId}")
 	public ResponseEntity<?> generateDailyVoucher(@PathVariable Long userId) {
-		System.out.println("🎯 Resgatando voucher para userId = " + userId);
-	    Object result = voucherService.generateDailyVoucher(userId);
-	    return ResponseEntity.ok(result);
+	    try {
+	        System.out.println("🎯 Resgatando voucher para userId = " + userId);
+	        Object result = voucherService.generateDailyVoucher(userId);
+	        return ResponseEntity.ok(result);
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Erro interno: " + e.getMessage());
+	    }
 	}
+
 
 	
 }

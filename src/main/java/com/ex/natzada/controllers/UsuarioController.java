@@ -18,7 +18,7 @@ import com.ex.natzada.entities.Usuario;
 import com.ex.natzada.services.UsuarioService;
 
 
-@CrossOrigin(origins = "http://localhost:3000")
+
 @RestController
 @RequestMapping("/usuario")
 public class UsuarioController {

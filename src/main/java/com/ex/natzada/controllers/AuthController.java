@@ -33,9 +33,6 @@ public class AuthController {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
                 .body("Credenciais inválidas");
     }
-<<<<<<< HEAD
+
 }	
-=======
-}
->>>>>>> ada3173f40450b623d3fde75de46268eaccc93e7
 
